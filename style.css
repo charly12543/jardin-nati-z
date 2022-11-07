@@ -166,7 +166,7 @@ li{
     height: 800px;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 400px){
     .head{
         height: auto;
     }
@@ -185,6 +185,6 @@ width: auto;
    }
 
 .navbar{
-display: none;
+display: auto;
 }
 }
