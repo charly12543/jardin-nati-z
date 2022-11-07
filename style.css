@@ -166,8 +166,16 @@ li{
     height: 800px;
 }
 
-
-@media (max-width: 768px){
+@media screen and (max-width: 480px){
+    #head{
+        height: auto;
+    }
+    #div{
+        width: auto;
+    }
+    #navbar{
+        display:none;
+    }
 
 .title{
     margin-bottom: 120vh;
@@ -175,7 +183,7 @@ li{
 }
 
 .sau{
-height: 120vh;
+height: auto;
    }
 
 .navbar{
