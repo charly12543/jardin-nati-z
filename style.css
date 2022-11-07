@@ -167,14 +167,11 @@ li{
 }
 
 @media screen and (max-width: 480px){
-    #head{
+    .head{
         height: auto;
     }
-    #div{
+    .div{
         width: auto;
-    }
-    #navbar{
-        display:none;
     }
 
 .title{
@@ -184,6 +181,7 @@ li{
 
 .sau{
 height: auto;
+width: auto;
    }
 
 .navbar{
