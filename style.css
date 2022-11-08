@@ -183,6 +183,13 @@ li{
 @media (min-width:320px) and
 (max-width: 768px) and (orientation:landscape)
 {
+.head{
+display: flex;
+}
+
+.Navegador{
+    display: flex;
+}
 
 .title{
     margin-bottom: 120vh;
