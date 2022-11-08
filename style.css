@@ -166,29 +166,19 @@ li{
     height: 800px;
 }
 
-@media screen and (max-width: 400px){
-.head{
-        height: auto;
-}
-.div{
-        width: auto;
-}
+
+@media (max-width: 768px){
 
 .title{
     margin-bottom: 120vh;
     font-size: 40px;
 }
-.Navegador{
-    height: auto;
-    width: auto;
-}
 
 .sau{
-height: auto;
-width: auto;
+height: 120vh;
    }
 
 .navbar{
-display: auto;
+display: none;
 }
 }
