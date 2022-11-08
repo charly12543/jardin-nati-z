@@ -1,0 +1,16 @@
+1---- primero ponemos la ruta:
+
+cd C:\Users\Steffy\Desktop\primera-pagina-web
+
+2--- ponemos los cambios
+
+git add index.html
+git add style.css
+
+3---- hacemos el commit
+
+git commit -m "Agregue un cambio, con el creador de la pagina"
+
+4----- cerramos los cambios
+
+git push -u origin main
