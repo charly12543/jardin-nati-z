@@ -84,6 +84,19 @@ p{
     font-size: 18px;
     
 }
+
+.title1{
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600px;
+    text-transform: uppercase;
+    color: #cfc7c7;
+    font-family:'Times New Roman', Times, serif;
+}
+.parrafo{
+    color: #cfc7c7;
+}
+
 .btn:hover{
     background: none;
 }
