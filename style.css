@@ -57,7 +57,7 @@ body{
 
 .header{
     height: 80vh !important;
-    background:url(imagenes/family.jpg) no-repeat center;
+    background:url(alberca1.jpeg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
@@ -168,7 +168,9 @@ li{
 
 
 @media (max-width: 768px){
-
+.Navegador{
+    
+}
 .title{
     margin-bottom: 120vh;
     font-size: 40px;
