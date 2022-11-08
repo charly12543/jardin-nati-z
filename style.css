@@ -180,10 +180,10 @@ li{
 }
 
 
-@media (max-width: 768px){
-.Navegador{
-    
-}
+@media (min-width:320px) and
+(max-width: 768px) and (orientation:landscape)
+{
+
 .title{
     margin-bottom: 120vh;
     font-size: 40px;
