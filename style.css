@@ -12,42 +12,46 @@ body{
 
 .head{
     display: flex;
+    justify-content:space-between;
+    min-height: 70px;
+    background-color: lightskyblue;
+    padding: 10px;
     align-items: center;
-    justify-content: center;
-    height: 63px;
-    background: lightskyblue;
     position: fixed;
-    width: 100%;
-    z-index: 100%;
     
 }
-.Navegador{
+.logo{
     display: flex;
-    margin-right: 10px;
+    align-items: center;
 }
 
-.logo{
-    margin-left: 0 30px 0 30px;
-    
+.logo img{
+    height: 70px;
+    margin-right: 15px;
 }
-.logo a{
-    text-decoration: none;
-    color: #3f3f3f;
-    text-transform: uppercase;
-    font-size: 20px;
+
+
+
+.Navegador{
+    padding-right: 10px;
+    font-weight: 800;
 }
 .Navegador a{
-    display: block;
-    padding: 23px 20px;
+    
+    padding: 68px;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
     font-family: initial;
 }
+
 .Navegador a:hover{
-    background: #3f3f3f;
+    color: #9c27b0;
 }
+
+
+
 
 .header{
     display: flex;
@@ -137,7 +141,7 @@ li{
 }
 
 .sau{
-    padding: 30px;
+    padding: 70px 90px;
     background: whitesmoke;
 }
 
@@ -152,7 +156,7 @@ li{
 } 
 .galeria{
     color: whitesmoke;
-    padding: 80px 100px;
+    padding: 95px 115px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
@@ -184,11 +188,11 @@ li{
 (max-width: 768px) and (orientation:landscape)
 {
 .head{
-display: flex;
+        flex-direction:column;
 }
 
 .Navegador{
-    display: flex;
+    padding: 10px 0px;
 }
 
 .title{
