@@ -13,24 +13,45 @@ body{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:12px 30px;
+  padding:14px 40px;
   position:fixed;
-  top:0;width:100%;
-  background:rgba(255,255,255,0.75);
-  backdrop-filter:blur(10px);
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  top:0;
+  width:100%;
+  background:rgba(255,255,255,0.6);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(255,255,255,0.3);
   z-index:1000;
+  transition:all .3s ease;
 }
-.logo img{height:65px}
+.logo img{
+  height:60px;
+  filter:drop-shadow(0 4px 8px rgba(0,0,0,.15));
+}
 
 .navbar a{
-  margin:0 12px;
+  margin:0 14px;
   text-decoration:none;
-  color:#1e293b;
+  color:#0f172a;
   font-weight:500;
+  position:relative;
   transition:.3s;
 }
-.navbar a:hover{color:#16a34a}
+
+.navbar a::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:0%;
+  height:2px;
+  background:#16a34a;
+  transition:.3s;
+}
+
+.navbar a:hover::after{
+  width:100%;
+}
 
 /* HERO */
 .header{
@@ -200,7 +221,7 @@ iframe{
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:30px;
   max-width:1100px;
-  margin:50px auto 0;
+  margin:70px auto 0;
 }
 
 .card-servicio{
@@ -224,9 +245,8 @@ iframe{
 }
 
 .card-servicio p{
-  font-size:14px;
-  color:#475569;
-  line-height:1.6;
+  font-size:15px;
+  color:#64748b;
 }
 
 .card-servicio:hover{
