@@ -194,6 +194,46 @@ iframe{
   transform:translateY(0);
 }
 
+/* SERVICIOS PREMIUM */
+.servicios-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  max-width:1100px;
+  margin:50px auto 0;
+}
+
+.card-servicio{
+  background:white;
+  padding:35px 25px;
+  border-radius:20px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.08);
+  transition:all .3s ease;
+}
+
+.card-servicio i{
+  font-size:32px;
+  color:#15803d;
+  margin-bottom:15px;
+}
+
+.card-servicio h3{
+  font-size:20px;
+  margin-bottom:10px;
+  font-weight:600;
+}
+
+.card-servicio p{
+  font-size:14px;
+  color:#475569;
+  line-height:1.6;
+}
+
+.card-servicio:hover{
+  transform:translateY(-8px);
+  box-shadow:0 25px 50px rgba(0,0,0,0.15);
+}
+
 /* RESPONSIVE */
 @media(max-width:768px){
   .head{flex-direction:column}
