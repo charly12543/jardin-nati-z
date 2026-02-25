@@ -123,10 +123,46 @@
 </iframe>
 </section>
 
-
 <a href="https://api.whatsapp.com/send?phone=525578842099&text=Hola, quiero información"
    class="whatsapp-float" target="_blank">
    <i class="fab fa-whatsapp"></i>
-</a>    
+</a>
+    
+<div class="lightbox" id="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img">
+</div>
+<script>
+const images = document.querySelectorAll(".galeria-grid img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.querySelector(".close");
+
+images.forEach(img => {
+  img.addEventListener("click", () => {
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+  });
+});
+
+closeBtn.onclick = () => lightbox.style.display = "none";
+lightbox.onclick = e => {
+  if(e.target !== lightboxImg) lightbox.style.display = "none";
+};
+</script>
+    
+<script>
+const sections = document.querySelectorAll(".content");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+    }
+  });
+},{threshold:0.15});
+
+sections.forEach(sec => observer.observe(sec));
+</script>    
 </body>
 </html>
