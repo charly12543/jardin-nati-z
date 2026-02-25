@@ -1,199 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name="description" content="Jardín Nati-Z en Cuernavaca. Eventos infantiles, fiestas, renta de jardín y salón para celebraciones familiares. Ambiente seguro y divertido.">
-    <meta name="keywords" content="jardín de eventos Cuernavaca, fiestas infantiles Cuernavaca, jardín Nati-Z, renta de jardín Cuernavaca">
-    <meta name="author" content="Jardín Nati-Z">
-    <meta property="og:title" content="Jardín Nati-Z | Eventos en Cuernavaca">
-    <meta property="og:description" content="El mejor jardín para fiestas infantiles en Cuernavaca. Seguro, bonito y familiar.">
-    <meta property="og:image" content="imagenes/portada.jpg">
-    <meta property="og:url" content="https://charly12543.github.io/jardin-nati-z/">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/png" href="imagenes/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Fuente moderna -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Jardín Nati-Z | Eventos y Fiestas en Cuernavaca</title>
 
-    <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<meta name="description" content="Jardín Nati-Z en Cuernavaca. Eventos infantiles, fiestas y reuniones familiares en un ambiente elegante y seguro.">
+<meta property="og:title" content="Jardín Nati-Z | Eventos en Cuernavaca">
+<meta property="og:image" content="imagenes/portada.jpg">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<link rel="icon" href="imagenes/favicon.png">
 
-    <title>Jardín Nati'z</title>
-    
+<!-- Fuente -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="head">
+<!-- NAVBAR -->
+<div class="head">
+  <div class="logo">
+    <img src="log-nat.png" alt="Jardín Nati-Z">
+  </div>
 
-        <div class="logo">
-           <img src="log-nat.png" alt="logo del jardín" style="border-radius: 0 20px 0 20px;">
-        </div>
+  <nav class="navbar">
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Productos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</div>
 
-        <nav class="Navegador">
-            <a href="#inicio">Inicio</a>
-            <a href="#productos">Productos</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#galeria">Galería</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+<!-- HERO -->
+<header class="header" id="inicio">
+  <h1 class="title1">Celebra tus momentos más especiales</h1>
+  <p class="parrafo">
+    El lugar perfecto para fiestas, reuniones y eventos inolvidables.
+    Disfruta alberca, áreas verdes y un ambiente familiar único.
+  </p>
 
-     </div>
+  <a href="https://api.whatsapp.com/send?phone=525578842099&text=Hola, quiero información del jardín"
+     class="btn-principal" target="_blank">
+     Cotizar por WhatsApp
+  </a>
+</header>
 
-  <!-- HERO -->
-  <header class="content header" id="inicio">
-    <h2 class="title1">Celebra tus momentos más especiales</h2>
-    <p class="parrafo">
-  El lugar perfecto para fiestas, reuniones y eventos inolvidables.  
-  Disfruta alberca, áreas verdes y un ambiente familiar único.
-   </p>
-      <a href="https://api.whatsapp.com/send?phone=525578842099&text=Hola, quiero información del jardín"
-   class="btn-principal" target="_blank">
-   Cotizar por WhatsApp
-</a>
-  </header>
+<!-- SERVICIOS -->
+<section id="servicios" class="content fade-in">
+  <h2 class="title">Productos</h2>
 
-  <!-- PRODUCTOS -->
-   <!-- <section class="content sau" id="productos">-->
-      <section id="servicios" class="fade-in">
-
-    <h2 class="title">Productos</h2>
-    <p class="box-container">Contamos con:</p>
-
-    <div class="box">
-    <ul>
-        <li>Renta del jardín</li>
-        <li>Renta de mobiliario</li>
-        <li>Equipo de meseros</li>
-        <li>Banquetes y platillos</li>
-        <li>Amplio estacionamiento</li>
-    </ul>
-    </div>
-   </section>
-
-    <!-- NOSOTROS -->
-    <section class="content about" id="nosotros">
-        <h2 class="title">Nosotros</h2>
-        <p>
-            "Somos un <strong>jardín familiar</strong> en el cual nos especializamos en ofrecerte el mejor lugar para tus eventos sociales 
-            y/o reuniones, brindándote un excelente servicio. <br>
-            Ofrecemos una amplia variedad de servicios con opciones de diferentes presupuestos. <br>
-            Contamos con amplio estacionamiento y seguridad para que te relajes y disfrutes plenamente de tu evento."
-        </p>
-    </section>
-
-    <!-- GALERÍA -->
-    <section class="content galeria" id="galeria">
-        <h2 class="title">Galería</h2>
-        <div class="galeria-grid">
-  <img src="imagenes/alberca2.jpeg" alt="Alberca" loading="lazy">
-  <img src="imagenes/kids.jpeg" alt="Área infantil" loading="lazy">
-  <img src="imagenes/alberca1.jpeg" alt="Zona recreativa" loading="lazy">
-  <img src="imagenes/maigos.webp" alt="Eventos" loading="lazy">
-  <img src="imagenes/alberca3.jpeg" alt="Alberca jardín" loading="lazy">
-       </div>
-    </section>
-
-  <!-- CONTACTO -->
-  <section class="content contacto" id="contacto">
-    <h2 class="title">Contacto</h2><br>
-
-    <p><a href="tel:5578842099">Teléfono: 5578842099</a></p>
-    <p>Síguenos en nuestras redes sociales</p>
-
-    <div class="imagenes">
-        <a href="https://es-la.facebook.com/" target="_blank">
-            <img src="imagenes/face.png" width="60" height="60" style="border-radius:1000px;">
-        </a>
-
-        <a href="https://www.instagram.com/" target="_blank">
-            <img src="imagenes/instagrama.jpg" width="60" height="60" style="border-radius:1000px;">
-        </a>
-
-        <a href="https://api.whatsapp.com/send?phone=525578842099&text=Hola, necesito más información!">
-            <img src="imagenes/whats.jpg" width="60" height="60" style="border-radius:1000px;">
-        </a>
-    </div><br>
-
-    <!-- MAPA RESPONSIVE -->
-<iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.3820692628547!2d-99.18580172502121!3d18.646843382471328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce7fa8e9189f07%3A0x2ec3df5750fd0ecb!2sJARDIN%20DE%20EVENTOS%20%22NATIZ%22!5e0!3m2!1ses-419!2smx!4v1772053477929!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-  src="https://www.google.com/maps?q=Cuernavaca,Morelos&output=embed"
-  width="100%"
-  height="420"
-  style="border:0; border-radius:16px;"
-  allowfullscreen=""
-  loading="lazy">
-</iframe>
+  <ul class="lista-servicios">
+    <li>Renta del jardín</li>
+    <li>Renta de mobiliario</li>
+    <li>Equipo de meseros</li>
+    <li>Banquetes y platillos</li>
+    <li>Amplio estacionamiento</li>
+  </ul>
 </section>
 
-<a href="https://api.whatsapp.com/send?phone=525578842099&text=Hola, quiero información"
-   class="whatsapp-float" target="_blank">
-   <i class="fab fa-whatsapp"></i>
+<!-- NOSOTROS -->
+<section class="content about fade-in" id="nosotros">
+  <h2 class="title">Nosotros</h2>
+  <p>
+    Somos un <strong>jardín familiar</strong> especializado en eventos sociales y celebraciones.
+    Ofrecemos múltiples servicios para diferentes presupuestos en un ambiente seguro y elegante.
+  </p>
+</section>
+
+<!-- GALERIA -->
+<section class="content galeria fade-in" id="galeria">
+  <h2 class="title">Galería</h2>
+
+  <div class="galeria-grid">
+    <img src="imagenes/alberca2.jpeg" loading="lazy">
+    <img src="imagenes/kids.jpeg" loading="lazy">
+    <img src="imagenes/alberca1.jpeg" loading="lazy">
+    <img src="imagenes/maigos.webp" loading="lazy">
+    <img src="imagenes/alberca3.jpeg" loading="lazy">
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="content contacto fade-in" id="contacto">
+  <h2 class="title">Contacto</h2>
+
+  <p><a href="tel:5578842099">📞 557 884 2099</a></p>
+  <p>Síguenos en redes sociales</p>
+
+  <div class="imagenes">
+    <a href="#"><img src="imagenes/face.png"></a>
+    <a href="#"><img src="imagenes/instagrama.jpg"></a>
+    <a href="https://api.whatsapp.com/send?phone=525578842099">
+      <img src="imagenes/whats.jpg">
+    </a>
+  </div>
+
+  <iframe
+    src="https://www.google.com/maps?q=Jardin%20Natiz%20Cuernavaca&output=embed"
+    loading="lazy">
+  </iframe>
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5215578842099" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
 </a>
-    
+
+<!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox">
   <span class="close">&times;</span>
   <img class="lightbox-img" id="lightbox-img">
 </div>
-<script>
-const images = document.querySelectorAll(".galeria-grid img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const closeBtn = document.querySelector(".close");
 
-images.forEach(img => {
-  img.addEventListener("click", () => {
-    lightbox.style.display = "flex";
-    lightboxImg.src = img.src;
-  });
+<script>
+// LIGHTBOX
+document.querySelectorAll(".galeria-grid img").forEach(img => {
+  img.onclick = () => {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = img.src;
+  }
 });
+document.querySelector(".close").onclick = () =>
+  document.getElementById("lightbox").style.display = "none";
 
-closeBtn.onclick = () => lightbox.style.display = "none";
-lightbox.onclick = e => {
-  if(e.target !== lightboxImg) lightbox.style.display = "none";
-};
-</script>
-    
-<script>
-const sections = document.querySelectorAll(".content");
-
+// ANIMACIONES
 const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add("visible");
-    }
-  });
-},{threshold:0.1});
-
-sections.forEach(sec => observer.observe(sec));
-</script>    
-<script>
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  });
-
-  document.querySelectorAll(".fade-in").forEach(el => {
-    observer.observe(el);
-  });
+  entries.forEach(e => e.target.classList.toggle("visible", e.isIntersecting));
+});
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
 </script>
-<a href="https://wa.me/5215578842099" class="whatsapp-float" target="_blank">
-  💬
-</a>
-
-
-
 
 </body>
 </html>
