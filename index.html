@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Jardín Nati-Z en Cuernavaca. Eventos infantiles, fiestas, renta de jardín y salón para celebraciones familiares. Ambiente seguro y divertido.">
+    <meta name="keywords" content="jardín de eventos Cuernavaca, fiestas infantiles Cuernavaca, jardín Nati-Z, renta de jardín Cuernavaca">
+    <meta name="author" content="Jardín Nati-Z">
+    <meta property="og:title" content="Jardín Nati-Z | Eventos en Cuernavaca">
+    <meta property="og:description" content="El mejor jardín para fiestas infantiles en Cuernavaca. Seguro, bonito y familiar.">
+    <meta property="og:image" content="imagenes/portada.jpg">
+    <meta property="og:url" content="https://charly12543.github.io/jardin-nati-z/">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="imagenes/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- Fuente moderna -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,6 +26,7 @@
     <link rel="stylesheet" href="style.css">
 
     <title>Jardín Nati'z</title>
+    
 </head>
 
 <body>
@@ -50,7 +61,8 @@
   </header>
 
   <!-- PRODUCTOS -->
-  <section class="content sau" id="productos">
+   <!-- <section class="content sau" id="productos">-->
+      <section id="servicios" class="fade-in">
 
     <h2 class="title">Productos</h2>
     <p class="box-container">Contamos con:</p>
@@ -81,12 +93,11 @@
     <section class="content galeria" id="galeria">
         <h2 class="title">Galería</h2>
         <div class="galeria-grid">
-  <img src="imagenes/alberca2.jpeg" alt="Alberca">
-  <img src="imagenes/kids.jpeg" alt="Área infantil">
-  <img src="imagenes/alberca1.jpeg" alt="Zona recreativa">
-  <img src="imagenes/maigos.webp" alt="Eventos">
-  <img src="imagenes/alberca3.jpeg" alt="Alberca jardín">
-  <img src="imagenes/fam.webp" alt="Ambiente familiar">
+  <img src="imagenes/alberca2.jpeg" alt="Alberca" loading="lazy">
+  <img src="imagenes/kids.jpeg" alt="Área infantil" loading="lazy">
+  <img src="imagenes/alberca1.jpeg" alt="Zona recreativa" loading="lazy">
+  <img src="imagenes/maigos.webp" alt="Eventos" loading="lazy">
+  <img src="imagenes/alberca3.jpeg" alt="Alberca jardín" loading="lazy">
        </div>
     </section>
 
@@ -164,5 +175,25 @@ const observer = new IntersectionObserver(entries => {
 
 sections.forEach(sec => observer.observe(sec));
 </script>    
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  });
+
+  document.querySelectorAll(".fade-in").forEach(el => {
+    observer.observe(el);
+  });
+</script>
+<a href="https://wa.me/5215578842099" class="whatsapp-float" target="_blank">
+  💬
+</a>
+
+
+
+
 </body>
 </html>
