@@ -7,18 +7,24 @@
 }
 body{
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
 }
 
 .head{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     min-height: 70px;
-    background-color: lightskyblue;
-    padding: 10px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    padding: 10px 30px;
     align-items: center;
     position: fixed;
-    
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 .logo{
     display: flex;
@@ -46,12 +52,17 @@ body{
     font-family: initial;
 }
 
-.Navegador a:hover{
-    color: #9c27b0;
+.Navegador a{
+    padding: 12px 18px;
+    color: #1e293b;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
 
-
-
+.Navegador a:hover{
+    color: #16a34a;
+}
 
 .header{
     display: flex;
@@ -60,21 +71,26 @@ body{
 }
 
 .header{
-    height: 80vh !important;
-    background:url(imagenes/alberca1.jpeg) no-repeat center;
+    height: 90vh !important;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.35)),
+                url(imagenes/alberca1.jpeg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    text-align: center;
+    color: white;
 }
 
 .title{
-    margin-bottom: 40px;
-    font-size: 40px;
-    font-weight: 600px;
-    text-transform: uppercase;
-    color: #3f3f3f;
-    font-family:'Times New Roman', Times, serif;
-    
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: none;
+    color: #1e293b;
+}
+
+.title1{
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
 }
 
 p{
@@ -89,14 +105,7 @@ p{
     
 }
 
-.title1{
-    margin-bottom: 40px;
-    font-size: 40px;
-    font-weight: 600px;
-    text-transform: uppercase;
-    color: #cfc7c7;
-    font-family:'Times New Roman', Times, serif;
-}
+
 .parrafo{
     color: #cfc7c7;
 }
@@ -141,19 +150,14 @@ li{
 }
 
 .sau{
-    padding: 70px 90px;
-    background: whitesmoke;
+    padding: 80px 20px;
+    background: #f1f5f9;
 }
 
-
 .about{
-    background: lightskyblue;
-    padding: 70px 90px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-family: initial;
-} 
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: white;
+}
 .galeria{
     color: whitesmoke;
     padding: 95px 115px;
@@ -208,4 +212,26 @@ height: 120vh;
 .navbar{
 display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }
