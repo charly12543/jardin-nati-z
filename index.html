@@ -163,5 +163,14 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
 </script>
 
+  <script>
+window.addEventListener("scroll",()=>{
+  const nav=document.querySelector(".head");
+  nav.style.background = window.scrollY > 50
+    ? "rgba(255,255,255,0.85)"
+    : "rgba(255,255,255,0.6)";
+});
+</script>
+
 </body>
 </html>
