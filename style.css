@@ -3,8 +3,8 @@
 
 body{
   font-family:'Poppins',sans-serif;
-  background:#f8f6f2;
-  color:#1e293b;
+  background:#f5f3ef;
+  color:#0f172a;
   text-align:center;
 }
 
@@ -34,19 +34,29 @@ body{
 
 /* HERO */
 .header{
-  height:95vh;
+  height:100vh;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   background:
-    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)),
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.4)),
     url(imagenes/alberca1.jpeg) center/cover no-repeat;
   color:white;
-  padding-top:80px;
+  padding-top:90px;
 }
-.title1{font-size:42px;margin-bottom:15px}
-.parrafo{max-width:700px;color:#e2e8f0;line-height:1.6}
+.title1{
+  font-size:48px;
+  font-weight:600;
+  letter-spacing:1px;
+  margin-bottom:18px;
+}
+.parrafo{
+  max-width:720px;
+  font-size:18px;
+  color:#e5e7eb;
+  line-height:1.7;
+}
 
 /* BOTON */
 .btn-principal{
@@ -66,8 +76,15 @@ body{
 }
 
 /* SECCIONES */
-.content{padding:80px 20px}
-.title{font-size:34px;margin-bottom:25px}
+.content{
+  padding:110px 20px;
+}
+.title{
+  font-size:36px;
+  font-weight:600;
+  margin-bottom:30px;
+  letter-spacing:.5px;
+}
 
 /* SERVICIOS */
 .lista-servicios{
