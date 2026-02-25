@@ -234,10 +234,60 @@ iframe{
     transform:scale(1.05);
     box-shadow:0 20px 40px rgba(0,0,0,0.4);
 }
+/* LIGHTBOX PREMIUM */
+.lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:2000;
+}
 
+.lightbox-img{
+    max-width:90%;
+    max-height:80%;
+    border-radius:16px;
+    box-shadow:0 30px 60px rgba(0,0,0,0.5);
+    animation:zoomIn 0.3s ease;
+}
 
+.close{
+    position:absolute;
+    top:30px;
+    right:40px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+}
 
+@keyframes zoomIn{
+    from{transform:scale(0.8); opacity:0;}
+    to{transform:scale(1); opacity:1;}
+}
 
+/* ANIMACIONES SUAVES */
+.content{
+    opacity:0;
+    transform:translateY(40px);
+    transition:0.8s ease;
+}
+
+.content.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+img{
+    transition:0.4s ease;
+}
+
+img:hover{
+    filter:brightness(1.05) contrast(1.05);
+}
 
     
 }
