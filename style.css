@@ -253,7 +253,11 @@ iframe{
   transform:translateY(-8px);
   box-shadow:0 25px 50px rgba(0,0,0,0.15);
 }
-
+/* SECCIÓN CONTACTO PREMIUM */
+#contacto {
+  margin-top: 50px;
+  padding-top: 50px;
+}
 /* RESPONSIVE */
 @media(max-width:768px){
   .head{flex-direction:column}
