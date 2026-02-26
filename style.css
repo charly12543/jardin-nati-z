@@ -3,9 +3,9 @@
 
 body{
   font-family:'Poppins',sans-serif;
-  background:#f5f3ef;
-  color:#0f172a;
-  text-align:center;
+  margin:0;
+  background: linear-gradient(180deg,#fffdf8,#f7f2e9);
+  color:#333;
 }
 
 /* NAVBAR */
